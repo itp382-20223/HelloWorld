@@ -15,12 +15,12 @@ public class FingerSprite : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionEnter2D hit a " + collision.otherCollider.gameObject.name);
+        Debug.Log("OnCollisionEnter2D hit a " + collision.gameObject.name);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionExit2D left a " + collision.otherCollider.gameObject.name);
+        Debug.Log("OnCollisionExit2D left a " + collision.gameObject.name);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
